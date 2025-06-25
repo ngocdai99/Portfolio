@@ -6,7 +6,7 @@ const Skills = () => {
           <div className="inner_wrap">
             <div className="leftbox">
               <div className="arlo_tm_mini_title_holder">
-                <h4>Technical Skills</h4>
+                <h3>Technical Skills</h3>
               </div>
               <p>
                 I specialize in developing mobile applications using React

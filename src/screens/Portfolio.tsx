@@ -3,9 +3,13 @@ import MobileMenu from "~/components/mobile/MobileMenu";
 import PreLoader from "~/components/PreLoader";
 import RightPart from "~/components/RightPart";
 import { FloatButton } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 const Portfolio = () => {
-  const [hideLeftPart, setHideLeftPart] = useState(true);
+  const [hideLeftPart, setHideLeftPart] = useState(false);
+  useEffect(() => {
+    if(isMobile) setHideLeftPart(true)
+  }, [])
   return (
     <div className="arlo_tm_wrapper_all">
       <div id="arlo_tm_popup_blog">

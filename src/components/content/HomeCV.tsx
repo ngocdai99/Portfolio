@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import React from "react";
+import avatar from '~/assets/img/hero/avatar.jpg';
 const HomeCV = () => {
   const handleScrollToAbout = (event: any) => {
     event.preventDefault();
@@ -17,7 +17,7 @@ const HomeCV = () => {
           <div className="content hero">
             <div className="inner_content">
               <div className="image_wrap">
-                <img src="img/hero/avatar.jpg" alt="hero" />
+                <img src={avatar} alt="hero" />
               </div>
               <div className="name_holder">
                 <h3>

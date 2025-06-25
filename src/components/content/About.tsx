@@ -1,8 +1,9 @@
 import { TypeAnimation } from "react-type-animation";
 import avatar3 from "~/assets/img/about/avatar3.jpg";
 import myCV from "~/assets/CV_Bui_Ngoc_Dai.pdf";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Parallax from "parallax-js";
+import logo550 from '~/assets/img/about/550x640.jpg'
 const About = () => {
   const sceneEl = useRef(null);
 
@@ -35,11 +36,11 @@ const About = () => {
               <div className="leftbox">
                 <div
                   className="about_image_wrap parallax"
-                  ref={sceneEl}
                   data-relative-input="true"
+                  ref={sceneEl}
                 >
                   <div className="image layer" data-depth="0.2">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
+                    <img src={logo550} alt="550x640" />
                     <div
                       className="inner"
                       data-img-url={avatar3}
@@ -47,7 +48,7 @@ const About = () => {
                     ></div>
                   </div>
                   <div className="border layer" data-depth="0.6">
-                    <img src="img/about/550x640.jpg" alt="550x640" />
+                    <img src={logo550} alt="550x640" />
                     <div className="inner"></div>
                   </div>
                 </div>

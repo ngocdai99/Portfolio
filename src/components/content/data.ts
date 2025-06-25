@@ -114,6 +114,26 @@ const data: Project[] = [
     },
   },
   {
+    image: "book",
+    title: `Porfolio
+    Website`,
+    description:
+      "A personal website to showcase my profile, experiences, projects, and blog posts. The site features responsive design, smooth animations",
+    detail: {
+      startDate: "06/2024",
+      endDate: "08/2024",
+      teamSize: 1,
+      role: "Frontend Developer",
+      organization: "",
+      myResponsiblity: [
+        "Designed UI with React JS",
+        "Deploy website",
+      ],
+      techStack: "React JS",
+    },
+    github: "https://github.com/ngocdai99/Portfolio",
+  },
+  {
     image: "article",
     title: `Sun News
     (Application)`,
