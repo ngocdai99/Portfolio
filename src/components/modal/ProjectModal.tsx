@@ -20,7 +20,25 @@ const ProjectModal = ({ open, onOk, onCancel, project }: ProjectModalProps) => {
             flexDirection: "column",
           }}
         >
-          <h4>{project?.title}</h4>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 16
+            }}
+          >
+            <div className="icon">
+              <span
+                className="material-icons"
+                style={{ fontSize: 40, color: "orange" }}
+              >
+                {project.image}
+              </span>
+            </div>
+            <h4>{project?.title}</h4>
+          </div>
+
           <p>
             <em>
               {project.detail.startDate} – {project.detail.endDate} | Team size:{" "}

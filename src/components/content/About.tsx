@@ -3,7 +3,7 @@ import avatar3 from "~/assets/img/about/avatar3.jpg";
 import myCV from "~/assets/CV_Bui_Ngoc_Dai.pdf";
 const About = () => {
   return (
-    <div className="arlo_tm_section relative" id="about">
+    <div className="arlo_tm_section relative" id="about" style={{paddingTop: 100}}>
       <div className="arlo_tm_about_wrapper_all">
         <div className="container">
           <div className="arlo_tm_title_holder">
@@ -19,7 +19,11 @@ const About = () => {
                 >
                   <div className="image layer" data-depth="0.1">
                     <img src="img/about/550x640.jpg" alt="550x640" />
-                    <div className="inner" data-img-url={avatar3}></div>
+                    <div className="inner" data-img-url={avatar3}
+                    style={{backgroundImage: `url(${avatar3})`}}
+                    >
+
+                    </div>
                   </div>
                   <div className="border layer" data-depth="0.2">
                     <img src="img/about/550x640.jpg" alt="550x640" />

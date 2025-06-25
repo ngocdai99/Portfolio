@@ -1,6 +1,11 @@
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
 const HomeCV = () => {
+  const handleScrollToAbout = (event: any) => {
+    event.preventDefault();
+    const section = document.querySelector("#about");
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <div className="arlo_tm_section" id="home">
       <div className="arlo_tm_hero_header_wrap">
@@ -42,7 +47,7 @@ const HomeCV = () => {
             </div>
           </div>
           <div className="arlo_tm_arrow_wrap bounce anchor">
-            <a href="#about">
+            <a href="#" onClick={(event) => handleScrollToAbout(event)}>
               <i className="xcon-angle-double-down"></i>
             </a>
           </div>

@@ -23,7 +23,7 @@ export type Project = {
 
 const data: Project[] = [
   {
-    image: "imenu_book",
+    image: "menu_book",
     title: "Learning Chinese System (Application)",
     description:
       "A Chinese learning app that enables users to study through videos, documents, and quizzes. The system tracks learning progress, supports assignment submissions and instant results, and enhances engagement via gamification and push notifications.",
@@ -92,7 +92,8 @@ const data: Project[] = [
   },
   {
     image: "shopping_cart",
-    title: "Furniture",
+    title: `Furniture
+    (Application)`,
     description:
       "A mobile app for buying and selling furniture with features like product management, cart, orders, and revenue tracking.",
     detail: {
@@ -114,7 +115,8 @@ const data: Project[] = [
   },
   {
     image: "article",
-    title: "Sun News",
+    title: `Sun News
+    (Application)`,
     description:
       "A mobile application that allows users to read global news and explore trending topics in real-time.",
     detail: {
@@ -153,7 +155,8 @@ const data: Project[] = [
   },
   {
     image: "menu_book",
-    title: "Minimum Library",
+    title: `Minimum Library
+    (Application)`,
     description:
       "A mobile application for library management including book management, staff, borrowing records, and usage statistics.",
     detail: {
