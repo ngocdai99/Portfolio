@@ -59,9 +59,25 @@ const Projects = () => {
                         <div className="title_service">
                           <h3>{project.title}</h3>
                         </div>
-                        <div className="text">
-                          <p>{project.description}</p>
-                        </div>
+                        <p>
+                          <em>
+                            {project.detail.startDate} –{" "}
+                            {project.detail.endDate} | Team size:{" "}
+                            {project.detail.teamSize} | Role:{" "}
+                            {project.detail.role}
+                          </em>
+                        </p>
+
+                        <p>
+                          <strong>Description:</strong>
+                          <br />
+                          {project.description}
+                        </p>
+
+                        <p>
+                          <strong>Tech stack:</strong>{" "}
+                          {project.detail.techStack}
+                        </p>
                       </div>
                     </li>
                   ))}

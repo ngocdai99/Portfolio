@@ -57,9 +57,90 @@ const Experiences = () => {
                       <div className="title_service">
                         <h3>{project.title}</h3>
                       </div>
-                      <div className="text">
-                        <p>{project.description}</p>
-                      </div>
+                      <p>
+                        <em>
+                          {project.detail.startDate} – {project.detail.endDate}{" "}
+                          | Team size: {project.detail.teamSize} | Role:{" "}
+                          {project.detail.role}
+                        </em>
+                      </p>
+
+                      <p>
+                        <strong>Description:</strong>
+                        <br />
+                        {project.description}
+                      </p>
+
+                      <p>
+                        <strong>Tech stack:</strong> {project.detail.techStack}
+                      </p>
+                      {project.github && (
+                        <p>
+                          <strong>GitHub:</strong>{" "}
+                          {typeof project.github === "string" ? (
+                            <a
+                              href={project.github}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {project.github}
+                            </a>
+                          ) : (
+                            <>
+                              {project.github.frontend && (
+                                <>
+                                  Frontend:{" "}
+                                  <a
+                                    href={project.github.frontend}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {project.github.frontend}
+                                  </a>
+                                  <br />
+                                </>
+                              )}
+                              {project.github.backend && (
+                                <>
+                                  Backend:{" "}
+                                  <a
+                                    href={project.github.backend}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    {project.github.backend}
+                                  </a>
+                                  <br />
+                                </>
+                              )}
+                            </>
+                          )}
+                        </p>
+                      )}
+                      {project.demo && (
+                        <p>
+                          <strong>Demo:</strong>{" "}
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {project.demo}
+                          </a>
+                        </p>
+                      )}
+                      {project.news && (
+                        <p>
+                          <strong>News:</strong>{" "}
+                          <a
+                            href={project.news}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {project.news}
+                          </a>
+                        </p>
+                      )}
                     </div>
                   </li>
                 ))}

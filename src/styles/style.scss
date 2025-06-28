@@ -1289,7 +1289,7 @@ img.svg {
         .inner {
           width: 100%;
           // height: auto;
-          height: 450px;
+          min-height: 500px;
           clear: both;
           float: left;
           position: relative;

@@ -25,7 +25,7 @@ const ProjectModal = ({ open, onOk, onCancel, project }: ProjectModalProps) => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              gap: 16
+              gap: 16,
             }}
           >
             <div className="icon">

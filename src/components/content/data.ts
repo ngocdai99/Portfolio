@@ -63,6 +63,23 @@ const data: Project[] = [
       techStack: "ReactJS, Redux, Tailwind CSS, NestJS, MongoDB",
     },
   },
+
+  {
+    image: "category",
+    title: `Blog website`,
+    description:
+      "A website enables user can sign in, sign up, view, edit, upload, delete blogs.",
+    detail: {
+      startDate: "5/2024",
+      endDate: "6/2024",
+      teamSize: 1,
+      role: "Frontend Developer",
+      organization: "",
+      myResponsiblity: ["Designed UI in React with NextJS and React Bootstrap"],
+      techStack: "NextJS, React Bootstrap",
+    },
+    github: "https://github.com/ngocdai99/nextjs-blog",
+  },
   {
     image: "local_cafe",
     title: "GreenZone Drinks Ordering System",
@@ -125,10 +142,7 @@ const data: Project[] = [
       teamSize: 1,
       role: "Frontend Developer",
       organization: "",
-      myResponsiblity: [
-        "Designed UI with React JS",
-        "Deploy website",
-      ],
+      myResponsiblity: ["Designed UI with React JS", "Deploy website"],
       techStack: "React JS",
     },
     github: "https://github.com/ngocdai99/Portfolio",
