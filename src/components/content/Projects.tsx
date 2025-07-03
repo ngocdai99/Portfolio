@@ -40,14 +40,14 @@ const Projects = () => {
             <div className="list_wrap">
               <ul>
                 {data
-                  .slice(2, data.length)
+                  .slice(3, data.length)
                   .map((project: Project, index: number) => (
                     <li
                       key={index}
                       onClick={() => showModal(project)}
                       style={{ cursor: "pointer" }}
                     >
-                      <div className="inner">
+                      <div className="inner" style={{display: 'flex', flexDirection: 'column', gap: 10}} >
                         <div className="icon">
                           <span
                             className="material-icons"

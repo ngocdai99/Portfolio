@@ -45,9 +45,12 @@ const ProjectModal = ({ open, onOk, onCancel, project }: ProjectModalProps) => {
               {project.detail.teamSize} | Role: {project.detail.role}
             </em>
           </p>
-          <p>
-            <strong>Organization:</strong> {project.detail.organization}
-          </p>
+          {project?.company && (
+            <p>
+              <strong>Organization:</strong> {project?.company}
+            </p>
+          )}
+
           <p>
             <strong>Description:</strong>
             <br />

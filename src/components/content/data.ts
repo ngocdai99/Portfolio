@@ -1,4 +1,5 @@
 export type Project = {
+  company?: string;
   image: string;
   title: string;
   description: string;
@@ -7,7 +8,6 @@ export type Project = {
     endDate: string;
     teamSize: number;
     role: string;
-    organization: string;
     myResponsiblity: string[];
     techStack: string;
   };
@@ -23,6 +23,7 @@ export type Project = {
 
 const data: Project[] = [
   {
+    company: 'Academic Department – FPT Polytechnic College, Ho Chi Minh City.',
     image: "menu_book",
     title: "Learning Chinese System (Application)",
     description:
@@ -32,8 +33,6 @@ const data: Project[] = [
       endDate: "Present",
       teamSize: 10,
       role: "Mobile Developer",
-      organization:
-        "Academic Department – FPT Polytechnic College, Ho Chi Minh City.",
       myResponsiblity: [
         "Developed features including video lecture playback, user management, FCM push notifications, and offline video download functionality",
         "Built and maintained user interfaces using React Native",
@@ -44,23 +43,43 @@ const data: Project[] = [
     },
   },
   {
+    company: 'Business Relations Department – FPT Polytechnic College, Ho Chi Minh City.',
     image: "work_outline",
     title: "FPT Polytechnic Career (Website)",
     description:
       "A web platform that supports students in finding full-time and part-time job opportunities aligned with their majors at FPT Polytechnic College. The system is used by administrators and staff to manage student profiles and job postings.",
     detail: {
-      startDate: "4/2025",
-      endDate: "6/2025",
+      startDate: "3/2025",
+      endDate: "Present",
       teamSize: 10,
       role: "Front-end Developer",
-      organization:
-        "Business Relations Department – FPT Polytechnic College, Ho Chi Minh City.",
+      myResponsiblity: [
+        "Designed and built the user interface using React Native",
+        "Integrated Google Maps for location-based features",
+        "Managed app state using Redux Toolkit, Saga, and Zustand",
+        "Published the application to Google Play"
+      ],
+      techStack: "ReactJS, Redux, Tailwind CSS, NestJS, MongoDB",
+    },
+  },
+   {
+    company: 'CHAMP SOLUTIONS COMPANY LIMITED',
+    image: "shopping_cart",
+    title: "Hoan Kiem Adventure (Application)",
+    description: `Travel to Hoan Kiem ward
+With the desire to bring visitors new, exciting, and engaging experiences on their journey to Hoan Kiem ward, the “Hoan Kiem Adventure” app helps tourists explore attractive destinations through news, images, and 3D space experiences. It brings them closer to local people, culture, and the natural beauty of Hoan Kiem`,
+    
+    detail: {
+      startDate: "1/2025",
+      endDate: "3/2025",
+      teamSize: 1,
+      role: "Mobile Developer",
       myResponsiblity: [
         "Developed the student CV management feature for the admin dashboard",
         "Built and maintained responsive user interfaces using ReactJS",
         "Integrated front-end with back-end via RESTful APIs",
       ],
-      techStack: "ReactJS, Redux, Tailwind CSS, NestJS, MongoDB",
+      techStack: "React Native, Redux Toolkit, Saga, Zustand, Google Map, SQLite, MongoDB",
     },
   },
 
@@ -74,7 +93,6 @@ const data: Project[] = [
       endDate: "6/2024",
       teamSize: 1,
       role: "Frontend Developer",
-      organization: "",
       myResponsiblity: ["Designed UI in React with NextJS and React Bootstrap"],
       techStack: "NextJS, React Bootstrap",
     },
@@ -90,7 +108,6 @@ const data: Project[] = [
       endDate: "5/2025",
       teamSize: 5,
       role: "Leader (Fullstack)",
-      organization: "FPT Polytechnic College",
       myResponsiblity: [
         "Led a team of 5, handled task planning, code reviews, and overall project architecture",
         "Developed backend APIs with Express.js and MongoDB",
@@ -118,7 +135,6 @@ const data: Project[] = [
       endDate: "10/2024",
       teamSize: 1,
       role: "Fullstack Developer",
-      organization: "",
       myResponsiblity: [
         "Designed UI in React Native and backend with Express.js",
         "Built features: product management, cart, orders, stats",
@@ -141,7 +157,6 @@ const data: Project[] = [
       endDate: "08/2024",
       teamSize: 1,
       role: "Frontend Developer",
-      organization: "",
       myResponsiblity: ["Designed UI with React JS", "Deploy website"],
       techStack: "React JS",
     },
@@ -158,7 +173,6 @@ const data: Project[] = [
       endDate: "12/2024",
       teamSize: 1,
       role: "Fullstack Developer",
-      organization: "",
       myResponsiblity: [
         "Designed database and UI in React Native",
         "Implemented core features: authentication, profile management, tag-based filtering, news exploration, favoriting articles",
@@ -178,7 +192,6 @@ const data: Project[] = [
       endDate: "8/2024",
       teamSize: 2,
       role: "Fullstack Developer",
-      organization: "",
       myResponsiblity: [
         "Designed database and UI in Java XML",
         "Developed features for managing shops, products, shopping cart, orders, and revenue statistics",
@@ -198,7 +211,6 @@ const data: Project[] = [
       endDate: "6/2024",
       teamSize: 2,
       role: "Fullstack Developer",
-      organization: "",
       myResponsiblity: [
         "Designed database and UI in Java XML",
         "Developed features for managing books, staff, borrowing records, and usage statistics",

@@ -39,13 +39,13 @@ const Experiences = () => {
             </div>
             <div className="list_wrap">
               <ul>
-                {data.slice(0, 2).map((project: Project, index: number) => (
+                {data.slice(0, 3).map((project: Project, index: number) => (
                   <li
                     key={index}
                     onClick={() => showModal(project)}
                     style={{ cursor: "pointer" }}
                   >
-                    <div className="inner">
+                    <div className="inner" style={{display: 'flex', flexDirection: 'column', gap: 10}} >
                       <div className="icon">
                         <span
                           className="material-icons"
@@ -55,8 +55,9 @@ const Experiences = () => {
                         </span>
                       </div>
                       <div className="title_service">
-                        <h3>{project.title}</h3>
+                        <h3>{project?.company}</h3>
                       </div>
+                      <h6 style={{fontWeight: 'bold'}}>{project.title}</h6>
                       <p>
                         <em>
                           {project.detail.startDate} – {project.detail.endDate}{" "}

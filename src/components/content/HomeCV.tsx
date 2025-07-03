@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import avatar from '~/assets/img/hero/avatar.jpg';
+import avatar from "~/assets/img/hero/avatar.jpg";
 const HomeCV = () => {
   const handleScrollToAbout = (event: any) => {
     event.preventDefault();
@@ -30,11 +30,11 @@ const HomeCV = () => {
                   <TypeAnimation
                     {...({
                       sequence: [
-                        "Freelancer",
+                        "React Developer",
                         2000,
                         "UI/UX Designer",
                         2000,
-                        "React Developer",
+                        "Freelancer",
                         2000,
                       ],
                       wrapper: "span",
